@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+}
+
+header{
+    background-color: #000;
+}
+
+#linkPrincipal{
+    font-size: 1.1rem;
+    font-family: 'montserrat';
+}
+
+
+.enlacesNav, .textNaranjas{
+    color: #EF7B10;
+}
+
+.bi-search{
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+#sect-hero{
+    background-image: url("/Imagenes/reparacionesHero.png"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    margin-top: 5.1rem;
+}
+
+.btn-primary{
+    background-color: #EF7B10;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #7b3f07;
+}
+
+.btn-tertiary{
+    border: none;
+}
+
+.btn-tertiary:hover{
+    background-color: rgb(101, 101, 101);
+}
+
+.btn-info{
+    background-color: #0EA5E9;
+    
+}
+
+.btn-info:hover{
+    background-color: #0871a2;
+}
+
+.bg-text{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#img-whatsapp{
+    filter: drop-shadow(0 8px 5px rgb(0,0,0,0.3));
+}
+
+.navbar-dark .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28239, 123, 16, 100' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+@media (max-width: 1080px) {
+
+    .navbar-nav >li:hover{
+        background-color: #EF7B1040;
+        cursor: pointer;
+    }
+
+    .navbar-nav i:hover{
+        background-color: #EF7B1040;
+        cursor: pointer;
+    }
+
+    .navbar-nav i{
+        text-align: center;
+    }
+    
+}
