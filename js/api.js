@@ -100,7 +100,7 @@ async function apiFetch(ruta, opciones = {}) {
     }
 
     if(!respuesta.ok){
-        const mensaje = (datos && datos.mensaje) || (respuesta.status === 403 ? "No tienes permiso para esta acción" : "Error" + respuesta.status);
+        const mensaje = (datos && datos.mensaje) || (respuesta.status === 403 ? "No tienes permiso para esta acción" : "Error " + respuesta.status);
         throw new Error(mensaje);
     }
 
