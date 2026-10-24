@@ -1,0 +1,68 @@
+:root{
+    --bg: #151414;
+    --bg-opacity-4: rgba(21, 20, 20, .4);
+    --btn-principal: #EF7B10;
+    --btn-principal-hover: #7b3f07;
+    --btn-secundary-hover: #198744;
+    --white: #ffffff
+}
+
+.card-body{
+    padding: 40px !important;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 0px 7px 8px rgba(21, 20, 20, .2);
+}
+
+.btn-check:checked + .btn-rol{
+    background-color: var(--btn-principal);
+    border-color: var(--btn-principal);
+    color: var(--white);
+}
+
+.btn-rol{
+    border-color: #ced4da;
+    color: #212529;
+}
+
+.btn-rol:hover{
+    border-color: var(--btn-principal) !important;
+    color: var(--btn-principal);
+    background-color: var();
+}
+
+.form-control:focus, .form-select:focus{
+    border-color: var(--btn-principal);
+    box-shadow: 0 0 0 0.2rem #EF7B1040;
+}
+
+.enlace-naranja{
+    color: var(--btn-principal);
+    font-weight: 600;
+}
+
+.enlace-naranja:hover{
+    text-decoration: underline !important;
+}
+
+
+@media (max-width : 390px) {
+    #rolSelect{
+        display: flex;
+        flex-direction: column;;
+    }
+
+    #rolSelect .col-6{
+        width: 100%;
+    }
+    #rolSelect .d-flex{
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 1080px) {
+    main#cont-formularioRegistro{
+        padding: 0px !important;
+    }
+}

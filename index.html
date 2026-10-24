@@ -15,8 +15,8 @@
     <body class="bg-light">
         <!-- Header / Navbar -->
         <header class="text-white px-4 py-3 d-flex justify-content-between align-items-center fixed-top">
-            <a href="#" class="navbar-brand text-white fw-bold d-flex align-items-center gap-4 text-decoration-none" id = "linkPrincipal">
-                <img src="Imagenes/logoLUWI.png" alt="Logo DevStudio" width="50" height="50" class="rounded-circle object-fit-cover" onerror="this.style.display='none'">
+            <a href="index.html" class="navbar-brand text-white fw-bold d-flex align-items-center gap-4 text-decoration-none" id = "linkPrincipal">
+                <img src="Imagenes/logoPrincipalLuwi.png" alt="Logo DevStudio" width="50" height="50" class="rounded-circle object-fit-cover" onerror="this.style.display='none'">
                         <div>Reparaciones <span class="textNaranjas">LUWI</span></div>
             </a>
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -34,8 +34,17 @@
                                 <li class="nav-item p-3 py-md-1">
                                     <a href="#sect-hero" class="text-decoration-none enlacesNav">Inicio</a>
                                 </li>
-                                <li class="nav-item p-3 py-md-1">
-                                    <a href="#services" class="text-decoration-none enlacesNav">Servicios</a>
+                                <li class="nav-item p-3 py-md-1 dropdown">
+                                    <a href="#services" class="text-decoration-none enlacesNav dropdown-item dropdown-toggle" id="servicios" data-bs-toggle="dropdown" >Servicios</a>
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="servicios">
+                                        <li>
+                                            <a href="pages/registroUser.html" class="dropdown-item text-decoration-none enlacesNav">Registrarse</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages/login.html" class="dropdown-item text-decoration-none enlacesNav">Iniciar Sesión</a>
+                                        </li>
+                                    </ul>
+
                                 </li>
                                 <li class="nav-item p-3 py-md-1">
                                     <a href="#contact" class="text-decoration-none enlacesNav">Contacto</a>
@@ -58,7 +67,7 @@
                 </p>
                 <div class="d-flex justify-content-center gap-3">
                     <a href="#" class="btn btn-outline-dark btn-light px-4 fw-semibold btn-tertiary">Más Información</a>
-                    <a href="#" class="btn btn-outline-dark px-4 fw-semibold d-flex align-items-center btn-primary">Registrate</a>
+                    <a href="pages/registroUser.html" class="btn btn-outline-dark px-4 fw-semibold d-flex align-items-center btn-primary">Registrate</a>
                 </div>
             </div>
         </section>
