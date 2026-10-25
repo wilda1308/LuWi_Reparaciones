@@ -66,7 +66,7 @@
                     LuWi conecta a personas que necesitan reparar algo con reparadores, listos para ayudar y ganar por lo que saben. Publica tu problema, compara ofertas y elige. O si tienes conocimientos tecnicos, registrate y empieza a generar ingresos reparando lo que más te apasiona.
                 </p>
                 <div class="d-flex justify-content-center gap-3">
-                    <a href="#" class="btn btn-outline-dark btn-light px-4 fw-semibold btn-tertiary">Más Información</a>
+                    <a href="pages/moreInfo.html" class="btn btn-outline-dark btn-light px-4 fw-semibold btn-tertiary">Más Información</a>
                     <a href="pages/registroUser.html" class="btn btn-outline-dark px-4 fw-semibold d-flex align-items-center btn-primary">Registrate</a>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                             <img src="/Imagenes/imgClientes.jpg" alt="Clientes" class="img-fluid mb-3 rounded-5" style="width: 80px; height: 80px; object-fit: contain;">
                             <h3 class="h5 fw-bold mb-3">Para clientes</h3>
                             <p class="text-muted small mb-4">Publica el daño con fotos y descripción, recibe ofertas de reparadores cercanos, compara precios justos y calificaciones de reparadores y elige con quien te sientas más seguro. Tu decides si la reparacion se hace a domicilio o en el taller del reparador.</p>
-                            <a href="#" class="btn btn-primary btn-sm mt-auto px-4 fw-semibold">Cliente</a>
+                            <a href="pages/registroUser.html?rol=CLIENTE" class="btn btn-primary btn-sm mt-auto px-4 fw-semibold">Cliente</a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                             
                             <h3 class="h5 fw-bold mb-3">Para reparadores</h3>
                             <p class="text-muted small mb-4">Registrate con tus habilidades, revisa las solicitudes disponibles cerca y envia tu oferta. Trabaja cuando quieras, elige los trabajos que se ajusten a lo que sabes hacer y genera ingresos extra.</p>
-                            <a href="#" class="btn btn-success btn-sm mt-auto px-4 fw-semibold">Reparadores</a>
+                            <a href="pages/registroUser.html?rol=REPARADOR" class="btn btn-success btn-sm mt-auto px-4 fw-semibold">Reparadores</a>
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                             
                             <h3 class="h5 fw-bold mb-3">Negociación</h3>
                             <p class="text-muted small mb-4">El precio de cada reparación se acuerda entre el cliente y el reparador, según la complejidad del trabajo. LuWi solo pone la plataforma para que ambos se encuentren, negocien el precio con confianza y cierren trato justo entre ambas partes.</p>
-                            <a href="#" class="btn btn-info text-white btn-sm mt-auto px-4 fw-semibold">¿Cómo funciona?</a>
+                            <a href="pages/moreInfo.html#como-funciona" class="btn btn-info text-white btn-sm mt-auto px-4 fw-semibold">¿Cómo funciona?</a>
                         </div>
                     </div>
                 </div>
@@ -122,13 +122,77 @@
         </section>
 
         
-        <footer class="bg-secondary bg-opacity-10 text-center py-4 border-top" id="contact">
+        <footer class="footer-luwi pt-5 pb-3" id="contact">
             <div class="container">
-                <h3 class="h6 fw-bold text-secondary mb-1">Reparaciones LUWI</h3>
-                <p class="text-muted small mb-3">Publica tus objetos deteriorados y consigue trabajadores capacitados.</p>
-                <a href="#" class="btn btn-dark btn-sm px-4 fw-semibold">Contactanos</a>
+                <div class="row g-4">
+                    <div class="col-12 col md-6 col-lg-4">
+                        <h3 class="h5 fw-bold text-white mb-2">Reparaciones <span class="textNaranjas">LUWI</span></h3>
+                        <p class="small mb-3">Publica tus objetos dañados y consigue reparadores capacitados. Luwi pone la plataforma para que clientes y reparadores se encuentren y acuerden el precio de cada trabajo.</p>
+                        <div class="d-flex gap-3 fs-4">
+                            <a href="#" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" aria-label="Tiktok">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <h4 class="h6 fw-bold text-white mb-3">Explora</h4>
+                        <ul class="list-unstyled small mb-0 d-grid gap-2">
+                            <li><a href="#sect-hero">Inicio</a></li>
+                            <li><a href="#services">Servicios</a></li>
+                            <li><a href="pages/moreInfo.html#como-funciona">¿Cómo funciona?</a></li>
+                            <li><a href="pages//moreInfo.html#preguntas">Preguntas frecuentes</a></li>
+                            <li><a href="pages/registroUser.html">Registrarse</a></li>
+                            <li><a href="pages/login.html">Iniciar Sesión</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-3 col-lg-3">
+                        <h4 class="h6 fw-bold text-white mb-3">Legal y confianza</h4>
+                        <ul class="list-unstyled small mb-0 d-grid gap-2">
+                            <li><a href="pages/moreInfo.html#datos">Tratamiento de datos personales</a></li>
+                            <li><a href="pages/moreInfo.html#marco-legal">Marco legal</a></li>
+                            <li><a href="pages/moreInfo.html#contacto">Peticiones, quejas y reclamos</a></li>
+                            <li><a href="https://www.sic.gov.co" target="_blank" rel="noopener noreferrer">Superintendencia de Industria y Comercio</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg3">
+                        <h4 class="h6 fw-bold text-white mb-3">Contacto</h4>
+                        <ul class="list-unstyled small mb-3 d-grid gap-2">
+                            <li><i class="bi bi-envelope me-2 textNaranjas"></i><a href="mailto:notificaciones@reparacionesluwi.com">notificaciones@reparacionesluwi.com</a></li>
+                            <li><i class="bi bi-whatsapp me-2 textNaranjas"></i><a href="https://wa.me/57XXXXXXXXXX" target="_blank" rel="noopener noreferrer">+57 XXX XXX XXXX</a></li>
+                            <li><i class="bi bi-geo-alt me-2 textNaranjas"></i>Bogotá, Colombia</li>
+                            <li><i class="bi bi-clock me-2 textNaranjas"></i>Lunes a Viernes, 8:00 a.m. a 6:00 p.m.</li>
+                        </ul>
+                        <a href="mailto:notificaciones@reparacionesluwi.com" class="btn btn-primary btn-sm px-4 fw-semibold">Contáctanos</a>
+                    </div>
+                </div>
+
+                <hr class="border-secondary my-4">
+
+                <div class="small">
+                    <p class="fw-semibold text-white mb-2">Marco normativo de referencia en Colombia</p>
+                    <ul class="mb-3 ps-3">
+                        <li><strong>ley 1581 de 2012:</strong> Protección de datos personales (habeas data).</li>
+                        <li><strong>Ley 1480 de 2011:</strong> Estatuto del Consumidor.</li>
+                        <li><strong>ley 527 de 1999:</strong> Mensajes de datos, comercio electrónico y firmas digitales.</li>
+                    </ul>
+                    <p class="mb-0">
+                        LuWi es una plataforma de contacto: el servicio de reparación y su precio se acuerdan entre
+                        cliente y reparador. La Superintendencia de Industria y Comercio (SIC) vigila la protección
+                        al consumidor y de los datos personales. Más detalles en
+                        <a href="pages/moreInfo.html#marco-legal" class="textNaranjas">Marco legal</a>.
+                    </p>
+                </div>
+                <p class="text-center small mb-0 mt-4 pt-3 border-top border-secondary">&COPY 2026 Reparaciones LUWI. Todos los derechos reservados</p>
             </div>
-            <a href="https://wa.me"class="d-flex position-fixed bottom-0 end-0 m-3" target="_blank">
+            <a href="https://wa.me/57XXXXXXXXXX" class="d-flex position-fixed bottom-0 end-0 m-3" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
                 <img src="/Imagenes/WhatsApp.svg" alt="WhatsApp" width="55px" id = "img-whatsapp">
             </a>
         </footer>
