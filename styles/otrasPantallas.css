@@ -2,7 +2,7 @@
     --bg: #151414;
     --bg-opacity-4: rgba(21, 20, 20, .4);
     --btn-principal: #EF7B10;
-    --btn-principal-hover: #7b3f07;
+    --btn-principal-hover: #BF620C;
     --btn-secundary-hover: #198744;
     --white: #ffffff
 }
@@ -45,6 +45,48 @@
     text-decoration: underline !important;
 }
 
+/* ------------------ Pestañas del panel de reparador -------------------- */
+.nav-pills .nav-link{
+    color: #212529;
+}
+
+.nav-pills .nav-link.active{
+    background-color: var(--btn-principal);
+    color: var(--white);
+}
+
+.btn-outline-primary{
+    border-color: var(--btn-principal);
+    color: var(--btn-principal);
+    transition: 0.2s;
+    font-weight: 700;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active{
+    background-color: var(--btn-principal) !important;
+    border-color: var(--btn-principal) !important;
+    box-shadow: 0px 0px 10px var(--btn-principal);
+    transform: scale(1.05);
+}
+
+.btn-outline-dark{
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.btn-outline-dark:hover{
+    background-color: var(--bg);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 7px var(--bg);
+}
+
+.bg-secondary{
+    background-color: #383d42 !important;
+}
+
+.card.rounded{
+    border-radius: 20px !important;
+}
 
 @media (max-width : 390px) {
     #rolSelect{

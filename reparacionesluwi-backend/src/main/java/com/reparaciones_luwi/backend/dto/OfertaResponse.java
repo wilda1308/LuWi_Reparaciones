@@ -11,7 +11,7 @@ public record OfertaResponse (
         String tituloReparacion,
         Long idReparador,
         String nombreReparador,
-        BigDecimal precioPresupuesto,
+        BigDecimal precioPropuesto,
         String descripcion,
         String tiempoEstimado,
         EstadoOferta estado,

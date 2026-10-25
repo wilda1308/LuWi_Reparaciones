@@ -1,0 +1,119 @@
+s<!DOCTYPE html>
+<html lang="es-CO">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reparaciones LuWi | Reparador</title>
+        <!-- Bootstrap 5 CSS CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Icons (Mantenido por si necesitas iconos en otro lado, como la lupa) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+        <!--Estilos personalizados-->
+        <link href="/styles/styleIndex.css" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/otrasPantallas.css">
+        <link href = "/Imagenes/logoLUWI.png" rel = "icon">
+    </head>
+    <body class="bg-light">
+        <header class="text-white px-4 py-3 d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <a href="/pages/reparador/panelReparador.html" class="navbar-brand text-white fw-bold d-flex align-items-center gap-3 text-decoration-none" id="linkPrincipal">
+                <img src="/Imagenes/logoLUWI.png" alt="Logo LUWI" width="50" height="50" class="rounded-circle object-fit-cover">
+                <div>Reparaciones <span class="textNaranjas">LUWI</span></div>
+            </a>
+            <div class="d-flex align-items-center gap-3">
+                <span class="d-none d-md-inline">Hola, <strong id="nombreUsuario"></strong></span>
+                <button id="btnSalir" class="btn btn-outline-primary btn-sm">
+                    <i class="bi bi-box-arrow-right me-1"></i> Cerrar sesión
+                </button>
+            </div>
+        </header>
+
+        <main class="container py-4">
+            <!-- Pestañas -->
+            <ul class="nav nav-pills mb-4" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active d-flex align-items-center gap-2" data-bs-toggle = "pill" data-bs-target = "#tabDisponibles" type="button" role="tab">
+                        <i class="bi bi-search fs-5"></i> Disponibles
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link d-flex align-items-center gap-2" data-bs-toggle="pill" data-bs-target="#tabMisOfertas" type="button" role="tab">
+                        <i class="bi bi-cash-coin fs-4"></i> Mis ofertas
+                        <span class="badge bg-secondary" id="contadorOfertas">0</span>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <!-- Pestaña 1: reparaciones disponibles -->
+                <div class="tab-pane fade show active" id="tabDisponibles" role="tabpanel">
+                    <form id="formFiltro" class="d-flex gap-2 mb-3 flex-wrap">
+                        <input type="text" class="form-control w-auto flex-grow-1" id="filtroCiudad" placeholder="Filtrar por ciudad">
+                        <button type="submit" class="btn btn-primary fw-semibold">Buscar</button>
+                        <button type="button" class="btn btn-outline-dark" id="btnTodas">Ver todas</button>
+                    </form>
+
+                    <div id="alertaDisponibles"></div>
+                    <div id="listaDisponibles"></div>
+                </div>
+
+                <!-- Pestaña 2: mis ofertas -->
+                <div class="tab-pane fade" id="tabMisOfertas" role="tabpanel">
+                    <div class="d-flex justify-content-end mb-3">
+                        <button id="btnActualizarOfertas" class="btn btn-outline-dark btn-sm">
+                            <i class="bi bi-arrow-clockwise"></i> Actualizar
+                        </button>
+                    </div>
+
+                    <div id="alertaMisOfertas"></div>
+                    <div id="listaMisOfertas"></div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Modelo para enviar una oferta a una reparación con estado disponible -->
+        <div class="modal fade" id="modalOferta" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <form id="formOferta" novalidate>
+                        <div class="modal-header">
+                            <h2 class="modal-title h5" id="tituloModal">Enviar oferta</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <p class="text-secondary small">Reparación: <strong id="modalTituloReparacion"></strong></p>
+
+                            <div id="alertaOferta"></div>
+
+                            <div class="mb-3">
+                                <label for="precioPropuesto" class="form-label">Tu precio (COP)</label>
+                                <input type="number" class="form-control" name="precioPropuesto" id="precioPropuesto" min="1" required>
+                                <div class="invalid-feedback">Escribe un precio mayor que cero.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="descripcionOferta" class="form-label">¿Qué harías?</label>
+                                <textarea class="form-control" name="descripcion" id="descripcionOferta" rows="3" required></textarea>
+                                <div class="invalid-feedback">Describe cómo harías la reparación.</div>
+                            </div>
+
+                            <div class="mb-1">
+                                <label for="tiempoEstimado" class="form-label">Tiempo estimado</label>
+                                <input type="text" class="form-control" name="tiempoEstimado" id="tiempoEstimado" maxlength="100" placeholder="Ej: 2 días" required>
+                                <div class="invalid-feedback">Indica cúanto tardarías en realizar la reparación.</div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary fw-semibold">Enviar oferta</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/api.js"></script>
+        <script src="/js/panelReparador.js"></script>
+    </body>
+</html>

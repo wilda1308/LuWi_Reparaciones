@@ -7,7 +7,7 @@
     --bg: #151414;
     --bg-opacity-4: rgba(21, 20, 20, .4);
     --btn-principal: #EF7B10;
-    --btn-principal-hover: #7b3f07;
+    --btn-principal-hover: #BF620C;
     --btn-secundary-hover: #198744;
 }
 
@@ -107,8 +107,6 @@ header{
     transform: scale(1.05);
 }
 
-
-
 .btn-close:focus{
     border: none;
     box-shadow: none;
@@ -130,7 +128,7 @@ header{
 }
 
 .dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active{
-    background: #EF7B1040;
+    background: #BF620C;
     color: #FFFFFF;
 }
 
@@ -155,12 +153,12 @@ header{
 @media (max-width: 1080px) {
 
     .navbar-nav >li:hover{
-        background-color: #EF7B1040;
+        background-color: #BF620C;
         cursor: pointer;
     }
 
     .navbar-nav i:hover{
-        background-color: #EF7B1040;
+        background-color: #BF620C;
         cursor: pointer;
     }
 
