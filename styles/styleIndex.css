@@ -196,6 +196,37 @@ section[id]{
     box-shadow: 0 0 0 .2rem #EF7B1040;
 }
 
+.btn-outline-primary{
+    border-color: var(--btn-principal);
+    color: var(--btn-principal);
+    transition: 0.2s;
+    font-weight: 700;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active{
+    background-color: var(--btn-principal) !important;
+    border-color: var(--btn-principal) !important;
+    box-shadow: 0px 0px 10px var(--btn-principal);
+    transform: scale(1.05);
+}
+
+.enlace-naranja{
+    color: var(--btn-principal);
+    font-weight: 600;
+}
+
+.enlace-naranja:hover{
+    text-decoration: underline !important;
+}
+
+.border-primary{
+    border-color: var(--btn-principal) !important;
+}
+
+.enlace{
+    color: #212529;
+}
+
 @media (max-width: 1080px) {
 
     .navbar-nav >li:hover{

@@ -1,17 +1,307 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-CO">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Reparaciones LuWi | Más información</title>
-        <!-- Bootstrap 5 CSS CDN -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Bootstrap Icons (Mantenido por si necesitas iconos en otro lado, como la lupa) -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <title>Reparaciones LuWi | Más información</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons (Mantenido por si necesitas iconos en otro lado, como la lupa) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
         <!--Estilos personalizados-->
-        <link href="/styles/styleIndex.css" rel="stylesheet">
-        <link href = "/Imagenes/logoLUWI.png" rel = "icon">
+    <link href="/styles/styleIndex.css" rel="stylesheet">
+    <link href = "/Imagenes/logoLUWI.png" rel = "icon">
 </head>
-<body>
-    
+<body class="bg-light">
+    <header class="text-white px-4 py-3 d-flex justify-content-between align-items-center flex-wrap gap-2 sticky-top">
+        <a href="/index.html" class="navbar-brand text-white fw-bold d-flex align-items-center gap-3 text-decoration-none" id="linkPrincipal">
+            <img src="/Imagenes/logoPrincipalLuwi.png" alt="Logo LUWI" width="50" height="50" class="rounded-circle object-fit-cover">
+            <div>Reparaciones <span class="textNaranjas">LUWI</span></div>
+        </a>
+        <nav class="d-none d-lg-flex gap-4">
+            <a href="#como-funciona" class="text-decoration-none enlacesNav">¿Cómo funciona?</a>
+            <a href="#preguntas" class="text-decoration-none enlacesNav">Preguntas</a>
+            <a href="#datos" class="text-decoration-none enlacesNav">Tus datos</a>
+            <a href="#marco-legal" class="text-decoration-none enlacesNav">Marco legal</a>
+            <a href="#contacto" class="text-decoration-none enlacesNav">contacto</a>
+        </nav>
+        <div class="d-flex gap-2">
+            <a href="/pages/login.html" class="btn btn-outline-primary btn-sm
+            ">Iniciar sesión</a>
+            <a href="/pages/registroUser.html" class="btn btn-primary btn-sm fw-bold">Registrarme</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="text-center py-5 px-3 bg-white border-bottom">
+            <div class="container py-3">
+                <h1 class="fw-bold display-6 mb-3">Todo lo que necesecitas saber sobre Reparaciones LuWi</h1>
+                <p class="text-muted mx-auto mb-0" style="max-width: 640px;">Una plataforma para reparar lo que se dañó y para conectar con quien si sabe reparar gane por dicha reparación. El precio de cada trabajo lo acuerdan directamente el cliente y el reparador y el cliente elige la oferta que más se ajuste a sus necesidades.</p>
+            </div>
+        </section>
+
+        <section class="container py-5" id="como-funciona">
+            <h2 class="fw-bold text-center mb-5">¿Cómo funciona?</h2>
+            <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold mb-4 textNaranjas"><i class="bi bi-person me-2 fs-2"></i>Si necesecitas una reparación</h3>
+                            <ol class="list-unstyled d-grid gap-3 mb-4">
+                                <li class="d-flex gap-3"><span class="paso-numero">1</span><strong>Regístrate como cliente.</strong></li>
+                                <img src="/Imagenes/" style="max-width: 80%; margin-inline: auto;" alt="Paso de registro">
+
+                                <li class="d-flex gap-3"><span class="paso-numero">2</span><span><strong>Publica tu reparación:</strong> Describe el daño, la categoría, tu zona y si deseas tu presupuesto.</span></li>
+                                <img src="/Imagenes/" style="max-width: 80%; margin-inline: auto;" alt="Paso de publicar reparación">
+
+                                <li class="d-flex gap-3"><span class="paso-numero">3</span><span><strong>Compara ofertas de reparadores:</strong> Compara el precio, que harían y cuánto tardarían en realizar tu reparación.</span></li>
+                                <img src="/Imagenes/" style="max-width: 80%; margin-inline: auto;" alt="Paso de comparar entre ofertas">
+
+                                <li class="d-flex gap-3"><span class="paso-numero">4</span><span><strong>Acepta la oferta que prefieras: </strong> La reparación queda asignada y las demás ofertas se rechazan.</span></li>
+                                <img src="/Imagenes/" style="max-width: 80%; margin-inline: auto;" alt="Paso de aceptar oferta y rechazar las demás">
+                            </ol>
+                            <div class="d-flex justify-content-center">
+                                <a href="/pages/registroUser.html?rol=CLIENTE" class="btn btn-primary fw-semibold px-4 ">Registrarme como cliente</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold mb-4 text-success"><i class="bi bi-tools me-2 fs-2"></i>Si sabes reparar objetos</h3>
+                            <ol class="list-unstyled d-grid gap-3 mb-4">
+                                <li class="d-flex gap-3"><span class="paso-numero bg-success">1</span><strong>Regístrate como reparador.</strong></li>
+                                <img src="/Imagenes/" style="max-width: 80%; margin-inline: auto;" alt="Paso de registro">
+
+                                <li class="d-flex gap-3"><span class="paso-numero bg-success">2</span><span><strong>Revisa las reparaciones disponibles:</strong> Filtra por tu ciudad o busca todas las reparaciones.</span></li>
+                                <img src="/Imagenes/" style="max-width: 80%; margin-inline: auto;" alt="Paso buscar reparaciones">
+
+                                <li class="d-flex gap-3"><span class="paso-numero bg-success">3</span><span><strong>Envía tu oferta:</strong> Envía tu precio, qué harías y cuánto tardarías en la reparación.</span></li>
+                                <img src="/Imagenes/" style="max-width: 80%; margin-inline: auto;" alt="Paso enviar oferta.">
+
+                                <li class="d-flex gap-3"><span class="paso-numero bg-success">4</span><span><strong>Sigue tus ofertas realizadas: </strong> En "Mis ofertas" si el cliente te elige, la verás como aceptada.</span></li>
+                                <img src="/Imagenes/" style="max-width: 80%; margin-inline: auto;" alt="Paso de aceptar oferta y rechazar las demás">
+                            </ol>
+                            <div class="d-flex justify-content-center">
+                                <a href="/pages/registroUser.html?rol=REPARADOR" class="btn btn-success fw-semibold px-4 ">Registrarme como reparador</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-5 border-top border-bottom" id="preguntas">
+            <div class="container" style="max-width: 820px;">
+                <h2 class="fw-bold text-center mb-4">Preguntas frecuentes</h2>
+                <div class="accordion" id="acordeonPreguntas">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#preg1" aria-expanded="true" aria-controls="preg1">
+                                ¿Cómo se define el precio?
+                            </button>
+                        </h3>
+                        <div id="preg1" class="accordion-collapse collapse show" data-bs-parent="#acordeonPreguntas">
+                            <div class="accordion-body">
+                                Cada reparador propone su precio en su oferta, según la complejidad del trabajo. El cliente compara y elige la que mejor le convenga.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#preg2" aria-expanded="false" aria-controls="preg2">
+                                ¿Puedo recibir varias ofertas?
+                            </button>
+                        </h3>
+                        <div id="preg2" class="accordion-collapse collapse" data-bs-parent="#acordeonPreguntas">
+                            <div class="accordion-body">
+                                Sí. Varios reparadores pueden ofertar a la misma reparación, pero cada uno puede enviar una sola oferta por reparación. Cuando aceptas una oferta, las demás se rechazan automáticamente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#preg3" aria-expanded="false" aria-controls="preg3">
+                                ¿Dónde se hace la reparación?
+                            </button>
+                        </h3>
+                        <div id="preg3" class="accordion-collapse collapse" data-bs-parent="#acordeonPreguntas">
+                            <div class="accordion-body">
+                                A domicilio del cliente o en el taller del reparador, según el caso. Lo acuerdan las dos partes.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#preg4" aria-expanded="false" aria-controls="preg4">
+                                ¿Puedo ser reparador y reparador a la vez?
+                            </button>
+                        </h3>
+                        <div id="preg4" class="accordion-collapse collapse" data-bs-parent="#acordeonPreguntas">
+                            <div class="accordion-body">
+                                En esta versión cada cuenta tiene un solo rol. Si quieres usar reparaciones LuWi en los dos roles, crea dos cuentas con correos distintos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#preg5" aria-expanded="false" aria-controls="preg5">
+                                ¿Qué pasa con mis datos personales?
+                            </button>
+                        </h3>
+                        <div id="preg5" class="accordion-collapse collapse" data-bs-parent="#acordeonPreguntas">
+                            <div class="accordion-body">
+                                Los usamos solo para los fines que te informamos y tienes derechos sobre ellos. Los explicamos en la sección <a href="#datos" class="enlace-naranja text-decoration-none">Tus datos</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#preg6" aria-expanded="false" aria-controls="preg6">
+                                ¿Qué hago si tengo un problema con una reparación?
+                            </button>
+                        </h3>
+                        <div id="preg6" class="accordion-collapse collapse" data-bs-parent="#acordeonPreguntas">
+                            <div class="accordion-body">
+                                Escribenos por los canales de la sección <a href="#contacto" class="enlace-naranja text-decoration-none">Contacto</a>. Además, como consumidor puedes acudir a la Superintendencia de Industria y Comercio (SIC), la autoridad que vigila la protección al consumidor en Colombia.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5" id="datos" style="max-width: 900px;">
+            <h2 class="fw-bold text-center mb-4">Tus datos personales</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <h3 class="h6 fw-bold text-uppercase text-secondary-emphasis">Qué datos pedimos</h3>
+                    <p class="small mb-4">
+                        Nombre, correo, teléfono, ciudad y de forma opcional una dirección física de referencia. También la información de las reparaciones y ofertas que publicas. Tu contraseña se guarda de manera cifrada, nunca se almacena en texto plano para proporcionar seguridad a los usuarios.
+                    </p>
+
+                    <h3 class="h6 fw-bold text-uppercase text-secondary-emphasis">Para qué los usamos</h3>
+                    <p class="small mb-4">
+                        Para crear tu cuenta, permitirte publicar reparaciones o enviar ofertas y comunicar a clientes y reparadores entre sí.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3 class="h6 fw-bold text-uppercase text-secondary-emphasis">Tus derechos</h3>
+                    <ul class="small mb-4 ps-3">
+                        <li>Conocer, actualizar y rectificar tus datos.</li>
+                        <li>Solicitar la supresión de tus datos o revocar tu autorización.</li>
+                        <li>Pedir prueba de la autorización que diste.</li>
+                        <li>Presentar quejas ante la Superintendencia de Industria y Comercio.</li>
+                    </ul>
+
+                    <h3 class="h6 fw-bold text-uppercase text-secondary-emphasis">Cómo ejercerlos</h3>
+                    <p class="small mb-0">
+                        Escríbenos a <a href="mailto:notificaciones@reparacionesluwi.com" class="enlace-naranja text-decoration-none">notificaciones@reparacionesluwi.com</a> desde el correo de tu cuenta. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="alert alert-light border mt-4 small mb-0 border-primary">
+                <strong class="textNaranjas">Responsable del tratamiento:</strong> Reparaciones LUWI · NIT 000000000 · CLL 00 # 0-0 · notificaciones@reparacionesluwi.com
+            </div>
+        </section>
+
+        <section class="bg-white py-5 border-top border-bottom" id="marco-legal">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-2">Marco legal</h2>
+                <p class="text-muted text-center mx-auto mb-5" style="max-width: 640px;">Estas son las normas colombianas que utiliza y regulan a Reparaciones LUWI y lo que significan para ti como usuario.</p>
+
+                <div class="row g-4">
+                    <div class="col-12 col-lg-4">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold">Ley 1581 de 2012</h3>
+                            <p class="text-secondary small fw-semibold">Protección de datos personales (habeas data)</p>
+                            <p class="small">Exige que el tratamiento de tus datos tenga tu autorización previa, expresa e informada, y que se haga bajo los principios de legalidad, finalidad, transparencia, seguridad y confidencialidad.</p>
+                            <p class="small mb-3"><strong>En Reparaciones LUWI:</strong> te explicamos qué datos usamos y para qué, puedes ejercer tus derechos de tratamiento de datos personales escribiéndonos.</p>
+                            <a href="https://www.sic.gov.co" target="_blank" rel="noopener noreferrer" class="enlace-naranja text-decoration-none small">
+                                Autoridad: SIC <i class="bi bi-box-arrow-up-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold">Ley 1480 de 2011</h3>
+                            <p class="text-secondary small fw-semibold">Estatuto del Consumidor</p>
+                            <ul class="small ps-3">
+                                <li>Información clara, veraz y suficiente (art.23).</li>
+                                <li>Precio informado en pesos Colombianos, con impuestos y costos adicionales (art. 26).</li>
+                                <li>Garantía: Para servicios que implican entregar un bien, a falta de garantía pactada la ley contempla tres meses (art. 8).</li>
+                                <li>Quién recibe un bien para repararlo debe entregar un recibo con fecha e identificación del bien, y responde por su custodia (art. 18).</li>
+                                <li>Derecho de retracto en ventas a distancia, con excepciones como los servicios ya iniciados con tu consentimiento (art. 47).</li>
+                                <li>Regula a los "portales de contacto" (art. 53).</li>
+                            </ul>
+                            <a href="https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/pdf/ley_1480_2011.pdf" target="_blank" rel="noopener noreferrer" class="enlace-naranja text-decoration-none small">
+                                Ver el texto de la ley <i class="bi bi-box-arrow-up-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold">Ley 527 de 1999</h3>
+                            <p class="text-secondary small fw-semibold">Mensajes de datos, comercio electrónico y firmas digitales</p>
+                            <p class="small">Reconoce la válidez jurídica a los mensajes de datos y a los acuerdos hechos por medios electrónicos.</p>
+                            <p class="small mb-3"><strong>En Reparaciones LUWI:</strong> las ofertas y aceptaciones se hacen dentro de la plataforma, por medios electrónicos.</p>
+                            <a href="https://ideam.gov.co/sites/default/files/normatividad/ley_527_de_1999.pdf" target="_blank" rel="noopener noreferrer" class="enlace-naranja text-decoration-none small">
+                                Ver el texto de la ley <i class="bi bi-box-arrow-up-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-muted small text-center mt-4 mb-0">Información orientativa. No reemplaza la asesoría de un abogado ni el texto oficial de las normas.</p>
+        </section>
+
+        <section class="container py-5" id="contacto" style="max-width: 800px;">
+            <h2 class="fw-bold text-center mb-4">Contacto y PQRS</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <h3 class="h6 fw-bold text-uppercase text-secondary">Escríbenos</h3>
+                    
+                    <ul class="list-unstyled small d-grid gap-2 mb-0">
+                        <li><i class="bi bi-envelope me-2 textNaranjas"></i><a href="mailto:notificaciones@reparacionesluwi.com" class="text-decoration-none enlace">notificaciones@reparacionesluwi.com</a></li>
+                        <li><i class="bi bi-whatsapp me-2 textNaranjas"></i><a href="https://wa.me/57XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="text-decoration-none enlace">+57 XXX XXX XXXX</a></li>
+                        <li><i class="bi bi-geo-alt me-2 textNaranjas"></i>Bogotá, Colombia</li>
+                        <li><i class="bi bi-clock me-2 textNaranjas"></i>Lunes a viernes, 8:00 a. m. a 6:00 p. m.</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3 class="h6 fw-bold text-uppercase text-secondary">Peticiones, quejas y reclamos</h3>
+                    <p class="small mb-0">
+                        Si quieres presentar una petición, queja o reclamo, escríbenos con tu nombre, el correo
+                        de tu cuenta y una descripción de lo ocurrido. Si se trata de una reparación, incluye su título.
+                        Te responderemos dentro de los plazos que establece la ley.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-luwi py-4 text-center small">
+        <div class="container">
+            <a href="/index.html">Volver al inicio</a> ·
+            <a href="#marco-legal">Marco legal</a> ·
+            <a href="#datos">Tus datos</a>
+            <p class="mb-0 mt-2">&COPY 2026 Reparaciones LUWI. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
