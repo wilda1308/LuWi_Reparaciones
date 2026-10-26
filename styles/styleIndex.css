@@ -242,6 +242,22 @@ i.enlace-naranja:hover{
     box-shadow: 0px 0px 7px 8px rgba(21, 20, 20, .2);
 }
 
+.btn-ver-password{
+    --bs-btn-color: #6c757d;
+    --bs-btn-border-color: #ced4da;
+    --bs-btn-hover-color: #EF7B10;
+    --bs-btn-hover-bg: #FFFFFF;
+    --bs-btn-hover-border-color: #EF7B10;
+    --bs-btn-active-color: #EF7B10;
+    --bs-btn-active-bg: #FFFFFF;
+    --bs-btn-active-border-color: #EF7B10;
+    --bs-btn-focus-shadow-rgb: 239, 123, 16;
+}
+
+input[type = "password"]::-ms-reveal, input[type = "password"]::-ms-clear{
+    display: none;
+}
+
 @media (max-width: 1080px) {
 
     .navbar-nav >li:hover{
