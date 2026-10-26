@@ -3,6 +3,10 @@
     src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --bg: #151414;
     --bg-opacity-4: rgba(21, 20, 20, .4);
@@ -24,6 +28,9 @@ header{
     font-family: 'montserrat';
 }
 
+li:hover a#preguntas-frecuentes i{
+    color: #fff;
+}
 
 .enlacesNav, .textNaranjas{
     color: #EF7B10;
@@ -223,8 +230,8 @@ section[id]{
     text-decoration: underline !important;
 }
 
-i.enlace-naranja:hover{
-    color: #ffffff;
+.navbar-nav i:hover{
+    color: #fff;
 }
 
 .border-primary{
@@ -265,12 +272,13 @@ input[type = "password"]::-ms-reveal, input[type = "password"]::-ms-clear{
         cursor: pointer;
     }
 
-    .navbar-nav i:hover{
+    .navbar-nav >li a#preguntas-frecuentes:hover{
         background-color: #BF620C;
-        cursor: pointer;
     }
 
-    .navbar-nav i{
+    .navbar-nav >li a#preguntas-frecuentes{
+        display: flex;
+        justify-content: center;
         text-align: center;
     }
     

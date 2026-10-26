@@ -1,8 +1,6 @@
 package com.reparaciones_luwi.backend.entity;
 
 import jakarta.persistence.*;
-import org.springframework.cglib.core.Local;
-
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
