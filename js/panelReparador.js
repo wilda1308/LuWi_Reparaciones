@@ -195,7 +195,7 @@ function crearTarjetaMiOferta(o){
                 <h3 class = "h5 mb-1">${escaparHtml(o.tituloReparacion)}</h3>
                 <span class = "badge ${BADGES[o.estado]}">${o.estado}</span>
             </div>
-            <p class = "fw-bold textNaranjas mb-2">${formatearPesos(o.precioPresupuesto)}</p>
+            <p class = "fw-bold textNaranjas mb-2">${formatearPesos(o.precioPropuesto)}</p>
             <p class = "mb-2">${escaparHtml(o.descripcion)}</p>
             <p class = "text-secondary small mb-2">
                 <i class = "bi bi-clock"></i> ${escaparHtml(o.tiempoEstimado)} · Enviada el ${formatearFecha(o.fechaOferta)}
