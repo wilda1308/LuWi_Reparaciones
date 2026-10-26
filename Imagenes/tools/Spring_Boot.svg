@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="Spring_Boot.svg"
+   width="128"
+   height="128"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="4.443299"
+     inkscape:cx="85.747099"
+     inkscape:cy="68.75522"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.cls-1{fill:#6db33f;}</style>
+  </defs>
+  <title
+     id="title1">spring-icon</title>
+  <g
+     id="g6"
+     transform="scale(1.3099159)">
+    <circle
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:4.56009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:53.5;stroke-dashoffset:723"
+       id="path2"
+       cx="48.858097"
+       cy="48.858097"
+       r="48.858097" />
+    <g
+       id="Layer_2"
+       data-name="Layer 2"
+       transform="matrix(0.84110164,0,0,0.84110164,6.8668616,8.9223034)">
+      <g
+         id="logos">
+        <path
+           class="cls-1"
+           d="M 88.4,5.6 A 42.32,42.32 0 0 1 83.2,14.7 48.46,48.46 0 1 0 15.5,84 l 1.8,1.6 A 48.41,48.41 0 0 0 96.8,52 C 98.2,39.8 94.5,24.2 88.4,5.6 Z M 22.5,84.4 a 4.12,4.12 0 1 1 -0.6,-5.8 4.21,4.21 0 0 1 0.6,5.8 z M 88.1,69.9 C 76.2,85.8 50.6,80.4 34.3,81.2 c 0,0 -2.9,0.2 -5.8,0.6 0,0 1.1,-0.5 2.5,-1 C 42.5,76.8 47.9,76 54.9,72.4 68,65.7 81.1,51 83.7,35.8 78.7,50.4 63.5,63 49.7,68.1 40.2,71.6 23.1,75 23.1,75 l -0.7,-0.4 c -11.6,-5.7 -12,-30.9 9.2,-39 9.3,-3.6 18.1,-1.6 28.2,-4 10.7,-2.5 23.1,-10.5 28.1,-21 5.6,16.9 12.4,43.1 0.2,59.3 z"
+           id="path1" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>spring-icon</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

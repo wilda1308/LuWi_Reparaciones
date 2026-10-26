@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="HTML.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   width="128"
+   height="128"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs5" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="64.523493"
+     inkscape:cy="74.86493"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <title
+     id="title1">HTML5 Logo</title>
+  <g
+     id="g1"
+     transform="matrix(0.2554436,0,0,0.2554436,-1.8311426,-1.7653464)">
+    <path
+       fill="#e44d26"
+       d="M 75.239789,458.06161 35.045476,6.910905 H 476.93932 L 436.745,457.818 255.627,508"
+       id="path2"
+       style="stroke-width:1.21801" />
+    <path
+       fill="#f16529"
+       d="M 255.9924,469.6327 V 43.938393 H 436.6232 L 402.15354,428.82938"
+       id="path3"
+       style="stroke-width:1.21801" />
+    <path
+       fill="#ebebeb"
+       d="M 117.13931,99.11422 H 255.9924 v 55.29763 h -78.19621 l 5.11564,56.63744 h 73.08057 v 55.17583 H 132.24263 m 2.43602,27.77061 h 55.54124 l 3.89763,44.21374 61.87488,16.56493 v 57.73365 L 142.47391,380.83981"
+       id="path4"
+       style="stroke-width:1.21801" />
+    <path
+       fill="#ffffff"
+       d="M 394.35827,99.11422 H 255.7488 v 55.29763 h 133.49383 m -4.99383,56.63744 h -128.5 v 55.29763 h 68.20853 l -6.45545,71.86255 -61.75308,16.56493 v 57.49005 l 113.27488,-31.42464"
+       id="path5"
+       style="stroke-width:1.21801" />
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>HTML5 Logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

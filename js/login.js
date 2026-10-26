@@ -34,8 +34,6 @@ form.addEventListener("submit", async(evento) => {
             }),
             auth: false
         });
-
-        console.log("Respuesta del login: ", respuesta);
         
         Sesion.guardar(respuesta);
         Sesion.irAlPanel();
