@@ -151,7 +151,7 @@ Fotos de evidencia del daño, calificaciones de reparadores, pagos en la propia 
         <img src="Imagenes/avatar-anonimo.svg" alt="Desarrollador" width="100">
         <br><b>Luna Valentina Gomez</b>
         <br><sub>Desarrolladora</sub>
-        <br><a href=""><img src="https://img.shields.io/badge/GitHub--181717?style=flat-square&logo=github" alt="GitHub de Luna"></a>
+        <br><a href="https://github.com/Luna-Gomez"><img src="https://img.shields.io/badge/GitHub-Luna-Gomez-181717?style=flat-square&logo=github" alt="GitHub de Luna"></a>
     </td>
   </tr>
 </table>
