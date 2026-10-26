@@ -17,17 +17,29 @@ const alertaForm = document.getElementById("alertaForm");
 const alertaLista = document.getElementById("alertaLista");
 const listaReparaciones = document.getElementById("listaReparaciones");
 const botonPublicar = formReparacion.querySelector("button[type=submit]");
+const modalReparacion = new bootstrap.Modal(document.getElementById("modalReparacion"));
 
 function iniciar(){
     document.getElementById("nombreUsuario").textContent = usuario.nombre;
-    document.getElementById("ciudad").value = usuario.ciudad;
 
     document.getElementById("btnSalir").addEventListener("click", () => Sesion.cerrar());
     document.getElementById("btnActualizar").addEventListener("click", cargarReparaciones);
+    document.getElementById("btnNuevaReparacion").addEventListener("click", abrirModalReparacion);
     formReparacion.addEventListener("submit", publicarReparacion);
     listaReparaciones.addEventListener("click", manejarClicLista);
 
     cargarReparaciones();
+}
+
+/* ----------------- Modal: Publicar una nueva reparación ---------------- */
+function abrirModalReparacion(){
+    //Cada vez que se abre, el formulario empieza limpio
+    formReparacion.reset();
+    formReparacion.classList.remove("was-validated");
+    alertaForm.innerHTML = "";
+    document.getElementById("ciudad").value = usuario.ciudad;
+
+    modalReparacion.show();
 }
 
 function numeroOpcional(valor){
@@ -71,13 +83,12 @@ async function publicarReparacion(evento) {
             body: JSON.stringify(datos)
         });
 
-        formReparacion.reset();
-        formReparacion.classList.remove("was-validated");
+        modalReparacion.hide();
 
-        document.getElementById("ciudad").value = usuario.ciudad;
-
-        mostrarAlerta(alertaForm, "Reparación publicada correctamente", "success");
-        cargarReparaciones();
+        //Primero cargamos la lista y al final mostramos el aviso
+        //(cargarReparaciones() limpia la alerta al empezar)
+        await cargarReparaciones();
+        mostrarAlerta(alertaLista, "Reparación publicada correctamente", "success");
     } catch (error){
         mostrarAlerta(alertaForm, error.message);
     } finally{
@@ -130,7 +141,7 @@ async function cargarReparaciones() {
         const reparaciones = await apiFetch("/api/reparaciones/mis-reparaciones");
 
         if(reparaciones.length === 0){
-            listaReparaciones.innerHTML = `<div class = "text-center text-secondary py-5">Aún no has publicado ninguna reparación</div>`;
+            listaReparaciones.innerHTML = `<div class = "text-center text-secondary py-5">Aún no has publicado ninguna reparación. Usa el botón <strong>Publicar reparación</strong> para crear una reparación.</div>`;
             return;
         }
 

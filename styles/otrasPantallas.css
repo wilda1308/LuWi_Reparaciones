@@ -7,12 +7,6 @@
     --white: #ffffff
 }
 
-.card-body{
-    padding: 40px !important;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 0px 0px 7px 8px rgba(21, 20, 20, .2);
-}
 
 .btn-check:checked + .btn-rol{
     background-color: var(--btn-principal);
@@ -36,15 +30,6 @@
     box-shadow: 0 0 0 0.2rem #EF7B1040;
 }
 
-.enlace-naranja{
-    color: var(--btn-principal);
-    font-weight: 600;
-}
-
-.enlace-naranja:hover{
-    text-decoration: underline !important;
-}
-
 /* ------------------ Pestañas del panel de reparador -------------------- */
 .nav-pills .nav-link{
     color: #212529;
@@ -53,20 +38,6 @@
 .nav-pills .nav-link.active{
     background-color: var(--btn-principal);
     color: var(--white);
-}
-
-.btn-outline-primary{
-    border-color: var(--btn-principal);
-    color: var(--btn-principal);
-    transition: 0.2s;
-    font-weight: 700;
-}
-
-.btn-outline-primary:hover, .btn-outline-primary:active{
-    background-color: var(--btn-principal) !important;
-    border-color: var(--btn-principal) !important;
-    box-shadow: 0px 0px 10px var(--btn-principal);
-    transform: scale(1.05);
 }
 
 .btn-outline-dark{

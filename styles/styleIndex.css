@@ -15,6 +15,10 @@ header{
     background-color: var(--bg);
 }
 
+#sect-hero{
+    top: calc(100vh - 100rem);
+}
+
 #linkPrincipal{
     font-size: 1.1rem;
     font-family: 'montserrat';
@@ -219,12 +223,23 @@ section[id]{
     text-decoration: underline !important;
 }
 
+i.enlace-naranja:hover{
+    color: #ffffff;
+}
+
 .border-primary{
     border-color: var(--btn-principal) !important;
 }
 
 .enlace{
     color: #212529;
+}
+
+.card-body{
+    padding: 40px !important;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 0px 7px 8px rgba(21, 20, 20, .2);
 }
 
 @media (max-width: 1080px) {
