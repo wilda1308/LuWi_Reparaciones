@@ -5,8 +5,11 @@
    height="120"
    version="1.1"
    id="svg2"
-   sodipodi:docname="avatar-anonimo.svg"
+   sodipodi:docname="avatar-anonimo-2.svg"
    inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   inkscape:export-filename="avatar-anonimo-2.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,9 +25,9 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="5.1677721"
-     inkscape:cx="60.37418"
-     inkscape:cy="56.987808"
+     inkscape:zoom="3.6541667"
+     inkscape:cx="60.752565"
+     inkscape:cy="64.446978"
      inkscape:window-width="1920"
      inkscape:window-height="1057"
      inkscape:window-x="-8"
@@ -40,21 +43,16 @@
        margin="0"
        bleed="0" />
   </sodipodi:namedview>
-  <circle
-     cx="60"
-     cy="60"
-     r="60"
-     fill="#EF7B10"
-     id="circle1"
-     style="fill:#947bff;fill-opacity:1" />
-  <circle
-     cx="60"
-     cy="44"
-     r="20"
-     fill="#151414"
-     id="circle2" />
   <path
-     d="m 20,104.83896 c 0,-22.000002 18,-36.000002 40,-36.000002 22,0 40,14 40,36.000002 a 60,60 0 0 1 -80,0 z"
-     fill="#151414"
-     id="path2" />
+     d="M 60,0 A 60,60 0 0 0 0,60 60,60 0 0 0 20,104.7207 c 0.04747,-21.949823 18.029064,-35.912106 40,-35.912106 21.970936,0 39.952528,13.962283 40,35.912106 A 60,60 0 0 0 120,60 60,60 0 0 0 60,0 Z m 0,24 A 20,20 0 0 1 80,44 20,20 0 0 1 60,64 20,20 0 0 1 40,44 20,20 0 0 1 60,24 Z m -22.039063,91.76563 a 60,60 0 0 0 0.824219,0.3457 60,60 0 0 1 -0.824219,-0.3457 z m 44.078125,0 a 60,60 0 0 1 -0.824218,0.3457 60,60 0 0 0 0.824218,-0.3457 z m -37.330078,2.20507 a 60,60 0 0 0 1.244141,0.33789 60,60 0 0 1 -1.244141,-0.33789 z m 30.582032,0 a 60,60 0 0 1 -1.244141,0.33789 60,60 0 0 0 1.244141,-0.33789 z m -23.404297,1.43164 a 60,60 0 0 0 1.417968,0.18946 60,60 0 0 1 -1.417968,-0.18946 z m 16.226562,0 a 60,60 0 0 1 -1.417969,0.18946 60,60 0 0 0 1.417969,-0.18946 z m -8.851562,0.55274 A 60,60 0 0 0 60,120 a 60,60 0 0 0 0.738281,-0.0449 60,60 0 0 1 -1.476562,0 z"
+     style="fill:#947bff"
+     id="path4" />
+  <path
+     d="M 60,24 A 20,20 0 0 0 40,44 20,20 0 0 0 60,64 20,20 0 0 0 80,44 20,20 0 0 0 60,24 Z"
+     style="fill:#151414"
+     id="path3" />
+  <path
+     d="m 60,68.808594 c -22,0 -40,13.99999 -40,35.999996 a 60,60 0 0 0 80,0 C 100,82.808584 82,68.808594 60,68.808594 Z"
+     style="fill:#151414"
+     id="path1" />
 </svg>
