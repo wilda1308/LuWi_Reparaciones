@@ -1,9 +1,9 @@
-# LuWi Reparaciones
+# LUWI Reparaciones
 
 <table>
   <tr>
     <td width="150" align="center">
-      <img src="Imagenes/logoLUWI.png" alt="Logo de LuWi Reparaciones" width="120">
+      <img src="Imagenes/logoLUWI.png" alt="Logo de LUWI Reparaciones" width="120">
     </td>
     <td>
       Prototipo de plataforma donde clientes publican objetos dañados y reparadores envían ofertas de precio junto con explicación de lo que van a realizar.
@@ -98,12 +98,12 @@
 </table>
 
 ## Cómo ejecutarlo de manera local
-1. Crear la base de datos `luwi_db` en MySQL Workbench v 8.0 de manera local. Entra a  MySQL Workbench v 8.0 e ingresa de manera local sin credenciales como local y en el puerto 3306, luego ejecuta el script de esta carpeta [script base de datos Reparaciones LuWi](reparacionesluwi-backend/src/main/resources/ScriptSQLDataBase_Luwi.sql)
-2. Definir la variable de entorno JWT_SECRET en IntelliJ IDEA. Abrir la carpeta en algun IDE como open folder o open project seleccionar la [carpeta de reparaciones LuWi backend](reparacionesluwi-backend/). Luego cargar todas las dependencias (debes tener Java 25 para poder hacer esto), luego en la barra superior de herramientas selecciona Run -> Edit Configurations... -> ReparacionesluwiBackendApplication -> Modify options -> Enviroment variables debe estar seleccionado -> Edit Environment Variables -> add + -> name = JWT_SECRET -> value = "Lo que te de al ejecutar los siguientes comandos en powerShell".
-```
+1. Crear la base de datos `luwi_db` en MySQL Workbench v 8.0 de manera local. Entra a  MySQL Workbench v 8.0 e ingresa de manera local sin credenciales como local y en el puerto 3306, luego ejecuta el script de esta carpeta [script base de datos Reparaciones LUWI](reparacionesLuwi-backend/src/main/resources/ScriptSQLDataBase_Luwi.sql)
+2. Definir la variable de entorno JWT_SECRET en IntelliJ IDEA. Abrir la carpeta en algun IDE como open folder o open project seleccionar la [carpeta de reparaciones LUWI backend](reparacionesluwi-backend/). Luego cargar todas las dependencias (debes tener Java 25 para poder hacer esto), luego en la barra superior de herramientas selecciona Run -> Edit Configurations... -> ReparacionesLuWiBackendApplication -> Modify options -> Enviroment variables debe estar seleccionado -> Edit Environment Variables -> add + -> name = JWT_SECRET -> value = "Lo que te de al ejecutar los siguientes comandos en powerShell".
+```powershell
 $b = New-Object byte[] 32; [Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($b); [Convert]::ToBase64String($b)
 ```
-3. Ejecutar el backend (http://localhost:8080), ejecutar el archivo [ReparacionesluwiBackendApplication.java](reparacionesluwi-backend/src/main/java/com/reparaciones_luwi/backend/ReparacionesluwiBackendApplication.java).
+3. Ejecutar el backend (http://localhost:8080), ejecutar el archivo [ReparacionesLUWIBackendApplication.java](reparacionesLuWi-backend/src/main/java/com/reparaciones_LuWi/backend/ReparacionesLUWIBackendApplication.java).
 4. Abrir la carpeta del frontend con Live Server (puerto por defecto 5500) o Live Preview 3000, abrir [index.html](index.html) y listo puedes probar la plataforma a tu gusto.
 
 ## Endpoints principales
@@ -156,4 +156,4 @@ Fotos de evidencia del daño, calificaciones de reparadores, pagos en la propia 
   </tr>
 </table>
 
-<p align="center"><sub>LuWi Reparaciones · Prototipo académico · 2026</sub></p>
+<p align="center"><sub>LUWI Reparaciones · Prototipo académico · 2026</sub></p>
