@@ -145,13 +145,13 @@ Fotos de evidencia del daño, calificaciones de reparadores, pagos en la propia 
         <img src="Imagenes/avatar-anonimo.svg" alt="Desarrollador" width="100">
         <br><b>Wilson David Monroy</b>
         <br><sub>Desarrollador</sub>
-        <br><a href="https://github.com/wilda1308"><img src="https://img.shields.io/badge/GitHub-wilda1308-181717?style=flat-square&logo=github" alt="GitHub de Wilson"></a>
+        <br><a href="https://github.com/wilda1308"><img src="https://img.shields.io/badge/GitHub-Wilson Monroy-181717?style=flat-square&logo=github" alt="GitHub de Wilson"></a>
     </td>
     <td align="center" width="220">
-        <img src="Imagenes/avatar-anonimo.svg" alt="Desarrollador" width="100">
+        <img src="Imagenes/avatar-anonimo-2.svg" alt="Desarrollador" width="100">
         <br><b>Luna Valentina Gomez</b>
         <br><sub>Desarrolladora</sub>
-        <br><a href="https://github.com/Luna-Gomez"><img src="https://img.shields.io/badge/GitHub-Luna-Gomez-181717?style=flat-square&logo=github" alt="GitHub de Luna"></a>
+        <br><a href="https://github.com/Luna-Gomez"><img src="https://img.shields.io/badge/GitHub-Luna Gomez-181717?style=flat-square&logo=github" alt="GitHub de Luna"></a>
     </td>
   </tr>
 </table>
